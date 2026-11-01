@@ -1,0 +1,268 @@
+site_name: SYSU::ACMM
+site_description: 社团算法知识库与传承平台
+site_url: https://SemsueZhang.github.io/acmm-site  # 稍后部署时再改
+copyright: Copyright 2026 ACMM 协会
+
+theme:
+  name: material
+  language: zh
+  logo: assets/logo.png
+  # 仓库信息
+  repo_url: https://github.com/SemsueZhang/acmm-site
+  repo_name: SemsueZhang/acmm-site   # 可选，鼠标悬停时显示的文字
+
+  # 显示图标（推荐使用 Octocat 或 GitHub 图标）
+  icon:
+    repo: fontawesome/brands/git-alt
+  palette:
+    # Light Mode 配色 (模仿 OI-Wiki 的浅色风格)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey   # 主色：蓝灰色
+      accent: light blue   # 强调色：浅蓝色
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    # Dark Mode 配色
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
+  features:
+    - navigation.tabs          # 顶部大分类标签
+    - navigation.indexes       # 分组标题可点击的索引页
+    - navigation.top           # 返回顶部按钮
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - 主页: index.md
+  - 归档: archive.md
+  - 关于:
+    - about/index.md
+    - 成员介绍: about/members.md
+  - 算法:
+    - algorithms/index.md
+    - 练习题单与资料来源: algorithms/practice.md
+    - 基础算法与策略:
+      - algorithms/foundations/index.md
+      - 复杂度、枚举与模拟: algorithms/foundations/complexity-enumeration.md
+      - 前缀和、差分与离散化: algorithms/foundations/prefix-difference.md
+      - 贪心: algorithms/foundations/greedy.md
+      - 分治与扫描线: algorithms/foundations/divide-conquer-sweep.md
+      - 高精度: algorithms/foundations/high-precision.md
+      - 排序算法: algorithms/sorting.md
+    - 数据结构:
+      - algorithms/data-structures/index.md
+      - 线性表: algorithms/linear-list.md
+      - 栈与队列: algorithms/data-structures/stack-queue.md
+      - 单调栈与单调队列: algorithms/data-structures/monotonic.md
+      - 哈希表: algorithms/data-structures/hash-table.md
+      - 堆: algorithms/data-structures/heap.md
+      - 并查集: algorithms/data-structures/union-find.md
+      - ST 表: algorithms/data-structures/sparse-table.md
+      - 线段树: algorithms/data-structures/segment-tree.md
+      - 树状数组: algorithms/data-structures/fenwick.md
+      - 笛卡尔树与平衡树: algorithms/data-structures/advanced-trees.md
+    - 树:
+      - algorithms/tree/index.md
+      - 树基础: algorithms/tree.md
+      - 二叉搜索树: algorithms/tree/bst.md
+      - 最近公共祖先: algorithms/tree/lca.md
+      - 树上综合算法: algorithms/tree/techniques.md
+    - 图:
+      - algorithms/graph/index.md
+      - 图基础: algorithms/graph.md
+      - 最短路: algorithms/graph/shortest-path.md
+      - 最小生成树: algorithms/graph/mst.md
+      - 拓扑排序: algorithms/graph/toposort.md
+      - 欧拉路与二分图: algorithms/graph/euler-bipartite.md
+      - 强连通分量与割点割边: algorithms/graph/connectivity.md
+    - 字符串:
+      - algorithms/strings/index.md
+      - 字符串基础: algorithms/strings/basics.md
+      - KMP: algorithms/strings/kmp.md
+      - Border、周期与失配树: algorithms/strings/border-period.md
+      - Trie: algorithms/strings/trie.md
+      - 字符串哈希: algorithms/strings/hash.md
+      - Manacher: algorithms/strings/manacher.md
+      - Z 函数(NOI 级拓展）: algorithms/strings/z-function.md
+      - 后缀数组(NOI 级拓展）: algorithms/strings/suffix-array.md
+    - 数学:
+      - algorithms/math/index.md
+      - 数论基础: algorithms/math/number-theory.md
+      - 组合数学: algorithms/math/combinatorics.md
+      - 快速幂: algorithms/math/fast-power.md
+      - 矩阵与高斯消元: algorithms/math/linear-algebra.md
+    - 动态规划:
+      - algorithms/dp/index.md
+      - DP 基础: algorithms/dp/basics.md
+      - 01 背包: algorithms/dp/knapsack.md
+      - 区间 DP: algorithms/dp/interval.md
+      - 多维与树形 DP: algorithms/dp/tree-multidimensional.md
+      - 状态压缩 DP: algorithms/dp/bitmask.md
+      - DP 常用优化: algorithms/dp/optimization.md
+    - 搜索:
+      - algorithms/search/index.md
+      - DFS 与 BFS: algorithms/search/dfs-bfs.md
+      - 二分搜索: algorithms/search/binary-search.md
+      - 搜索进阶: algorithms/search/advanced.md
+    - 计算几何（NOI 级拓展）:
+      - algorithms/geometry/index.md
+      - 几何基础: algorithms/geometry/basics.md
+      - 叉积与凸包: algorithms/geometry/convex-hull.md
+  - 题库:
+    - problems/index.md
+    - 校赛:
+      - 2025 中山大学程序设计校赛: problems/college/sysucpc2025.md
+    - 新手赛:
+      - 2026 中山大学程序设计新手赛: problems/novice/sysunpc2026.md
+    - 周赛:
+      - 2025-12-7 周赛: problems/weekly/2025-12-7.md
+  - 往期比赛:
+    - previous_contests/index.md
+    - 校赛:
+      - "2025 中山大学程序设计校赛网络赛":
+        - previous_contests/college/sysupc_2025_online/index.md
+        - "A. the number of SYSU": previous_contests/college/sysupc_2025_online/A.md
+        - "B. candy": previous_contests/college/sysupc_2025_online/B.md
+        - "C. triangle": previous_contests/college/sysupc_2025_online/C.md
+        - "D. Exchange Courses": previous_contests/college/sysupc_2025_online/D.md
+        - "E. Test": previous_contests/college/sysupc_2025_online/E.md
+        - "F. Dr.Z, the Raider": previous_contests/college/sysupc_2025_online/F.md
+        - "G. Dr.Z’s Trial": previous_contests/college/sysupc_2025_online/G.md
+      - "2024 中山大学程序设计竞赛决赛":
+        - previous_contests/college/sysupc_final_2024/index.md
+        - "A. Anniversary Celebration": previous_contests/college/sysupc_final_2024/sysupc_final_2024_A.md
+        - "B. Bruhcaea Simulator": previous_contests/college/sysupc_final_2024/sysupc_final_2024_B.md
+        - "C. Contest Reactions": previous_contests/college/sysupc_final_2024/sysupc_final_2024_C.md
+        - "D. Depths of Cities": previous_contests/college/sysupc_final_2024/sysupc_final_2024_D.md
+        - "E. Erasing Numbers": previous_contests/college/sysupc_final_2024/sysupc_final_2024_E.md
+        - "F. Finding Maxi-strings": previous_contests/college/sysupc_final_2024/sysupc_final_2024_F.md
+        - "G. General Checksum Calculation": previous_contests/college/sysupc_final_2024/sysupc_final_2024_G.md
+        - "H. Hoppers and Doors": previous_contests/college/sysupc_final_2024/sysupc_final_2024_H.md
+        - "I. Isla Loves Christmas": previous_contests/college/sysupc_final_2024/sysupc_final_2024_I.md
+        - "J. Jazz Music from the Er-th": previous_contests/college/sysupc_final_2024/sysupc_final_2024_J.md
+        - "K. King of Card Games": previous_contests/college/sysupc_final_2024/sysupc_final_2024_K.md
+        - "L. LCM and GCD": previous_contests/college/sysupc_final_2024/sysupc_final_2024_L.md
+        - "M. Make SYSU Great Again 3": previous_contests/college/sysupc_final_2024/sysupc_final_2024_M.md
+      - "2025 中山大学程序设计竞赛决赛":
+        - previous_contests/college/sysupc_final_2025/index.md
+        - "A. Abacus": previous_contests/college/sysupc_final_2025/sysupc_final_2025_A.md
+        - "B. Network": previous_contests/college/sysupc_final_2025/sysupc_final_2025_B.md
+        - "C. Arc Path": previous_contests/college/sysupc_final_2025/sysupc_final_2025_C.md
+        - "D. Perfect Life": previous_contests/college/sysupc_final_2025/sysupc_final_2025_D.md
+        - "E. Ecosystem": previous_contests/college/sysupc_final_2025/sysupc_final_2025_E.md
+        - "F. SYSU II": previous_contests/college/sysupc_final_2025/sysupc_final_2025_F.md
+        - "G. Gray Transform": previous_contests/college/sysupc_final_2025/sysupc_final_2025_G.md
+        - "H. SYSU III": previous_contests/college/sysupc_final_2025/sysupc_final_2025_H.md
+        - "I. Sum": previous_contests/college/sysupc_final_2025/sysupc_final_2025_I.md
+        - "J. Palindrome": previous_contests/college/sysupc_final_2025/sysupc_final_2025_J.md
+        - "K. Divisor Transformation": previous_contests/college/sysupc_final_2025/sysupc_final_2025_K.md
+        - "L. Larger or Smaller": previous_contests/college/sysupc_final_2025/sysupc_final_2025_L.md
+        - "M. Road2": previous_contests/college/sysupc_final_2025/sysupc_final_2025_M.md
+      - "2024 中山大学程序设计竞赛网络赛":
+        - previous_contests/college/sysupc_online_2024/index.md
+        - "A. Journey of SYSU": previous_contests/college/sysupc_online_2024/sysupc_online_2024_A.md
+        - "B. WAduck and Cuteness Contest": previous_contests/college/sysupc_online_2024/sysupc_online_2024_B.md
+        - "C. WAduck Rotates For One Minute": previous_contests/college/sysupc_online_2024/sysupc_online_2024_C.md
+        - "D. WAduck Gets Wrong Answer": previous_contests/college/sysupc_online_2024/sysupc_online_2024_D.md
+        - "E. Shield Block": previous_contests/college/sysupc_online_2024/sysupc_online_2024_E.md
+        - "F. Pac-Girl": previous_contests/college/sysupc_online_2024/sysupc_online_2024_F.md
+        - "G. Make SYSU Great Again 3.0 Alpha": previous_contests/college/sysupc_online_2024/sysupc_online_2024_G.md
+      - "2024 中山大学程序设计竞赛热身赛":
+        - previous_contests/college/sysupc_online_2025/index.md
+        - "A. Breakingsky and their common": previous_contests/college/sysupc_online_2025/sysupc_warmup_2024_A.md
+        - "B. Breakingsky and graph": previous_contests/college/sysupc_online_2025/sysupc_warmup_2024_B.md
+        - "C. Breakingsky and space": previous_contests/college/sysupc_online_2025/sysupc_warmup_2024_C.md
+        - "D. Breakingsky and star rail": previous_contests/college/sysupc_online_2025/sysupc_warmup_2024_D.md
+        - "E. Breakingsky and ping_fan": previous_contests/college/sysupc_online_2025/sysupc_warmup_2024_E.md
+        - "F. Breakingsky and sequences": previous_contests/college/sysupc_online_2025/sysupc_warmup_2024_F.md
+        - "G. Breakingsky and warehouse": previous_contests/college/sysupc_online_2025/sysupc_warmup_2024_G.md
+    - 新手赛:
+      - "2024 中山大学程序设计新手赛（线下赛）":
+        - previous_contests/novice/sysuNovice_onsite_2024/index.md
+        - "A. 时间复杂度": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_A.md
+        - "B. 寻觅": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_B.md
+        - "C. 声望": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_C.md
+        - "D. 区区整除": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_D.md
+        - "E. 采糖果": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_E.md
+        - "F. 绝对霸主": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_F.md
+        - "G. 咬合秒针": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_G.md
+        - "H. 罗德岛战役": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_H.md
+        - "I. 第三心脏": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_I.md
+        - "J. 回忆之树": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_J.md
+        - "K. 骤雨": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_K.md
+        - "L. 交通建造": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_L.md
+        - "M. 计算": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_M.md
+        - "N. 不为人知的位运算童谣": previous_contests/novice/sysuNovice_onsite_2024/sysuNovice_onsite_2024_N.md
+      - "2025 中山大学程序设计新手赛（线下赛）":
+        - previous_contests/novice/sysuNovice_onsite_2025/index.md
+        - "A. 时间复杂度": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_A.md
+        - "B. 完美洗牌": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_B.md
+        - "C. 游览路线": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_C.md
+        - "D. 靶场": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_D.md
+        - "E. 取模": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_E.md
+        - "F. 商店": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_F.md
+        - "G. 过河卒": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_G.md
+        - "H. 三仙归洞": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_H.md
+        - "I. 挑选座位": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_I.md
+        - "J. 高速公路": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_J.md
+        - "K. 分配系统": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_K.md
+        - "L. 提前修改": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_L.md
+        - "M. 尖塔攻击": previous_contests/novice/sysuNovice_onsite_2025/sysuNovice_onsite_2025_M.md
+      - "2024 中山大学程序设计新手赛（热身赛）":
+        - previous_contests/novice/sysuNovice_warmup_2024/index.md
+        - "A. 关于时间复杂度": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_A.md
+        - "B. 老实点 每次都有你": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_B.md
+        - "C. 木桶效应": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_C.md
+        - "D. 究极手": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_D.md
+        - "E. Password": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_E.md
+        - "F. 熊爷别笑了": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_F.md
+        - "H. Pause! Heal! Explosion!": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_H.md
+        - "I. 小学生也能秒解的题": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_I.md
+        - "J. Abyssal Echoes": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_J.md
+        - "K. 晚餐铃": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_K.md
+        - "L. 晚餐铃": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_L.md
+        - "M. 梦与公交站": previous_contests/novice/sysuNovice_warmup_2024/sysuNovice_warmup_2024_M.md
+      - "2025 中山大学程序设计新手赛（热身赛）":
+        - previous_contests/novice/sysuNovice_warmup_2025/index.md
+        - "A. 时间复杂度": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_A.md
+        - "B. 寻觅": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_B.md
+        - "C. 声望": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_C.md
+        - "D. 区区整除": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_D.md
+        - "E. 采糖果": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_E.md
+        - "F. 绝对霸主": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_F.md
+        - "G. 咬合秒针": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_G.md
+        - "H. 罗德岛战役": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_H.md
+        - "I. 第三心脏": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_I.md
+        - "J. 回忆之树": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_J.md
+        - "K. 骤雨": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_K.md
+        - "L. 交通建造": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_L.md
+        - "M. 计算": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_M.md
+        - "N. 不为人知的位运算童谣": previous_contests/novice/sysuNovice_warmup_2025/sysuNovice_warmup_2025_N.md
+  - 支持:
+    - support/index.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/sidebar.css
+
+extra:
+  analytics: {}   # 一个无害的占位，非必须
