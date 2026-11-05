@@ -6,3 +6,5 @@
   height="800"
   title="2025NVCPCONSITE PDF">
 </iframe>
+
+- [查看题解](tutorial/NVCPC_2025_Onsite_tutorial.md)

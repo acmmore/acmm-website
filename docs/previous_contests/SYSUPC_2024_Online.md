@@ -6,3 +6,5 @@
   height="800"
   title="2024SYSUPCONSITE PDF">
 </iframe>
+
+- [查看题解](tutorial/SYSUPC_2024_Online_tutorial.md)

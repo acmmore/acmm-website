@@ -6,3 +6,5 @@
   height="800"
   title="2024SYSUPCFINAL PDF">
 </iframe>
+
+- [查看题解](tutorial/SYSUPC_2024_Final_tutorial.md)
