@@ -121,19 +121,14 @@ nav:
   - 往期比赛:
     - previous_contests/index.md
     - 2025 中山大学程序设计校赛: previous_contests/SYSUPC_2025_Final.md
-    - 2025 中山大学程序设计校赛热身赛: previous_contests/SYSUPC_2025_Warm_Up.md
     - 2025 中山大学程序设计校赛网络赛: previous_contests/SYSUPC_2025_Online.md
     - 2024 中山大学程序设计校赛: previous_contests/SYSUPC_2024_Final.md
-    - 2024 中山大学程序设计校赛热身赛: previous_contests/SYSUPC_2024_Warm_Up.md
     - 2024 中山大学程序设计校赛网络赛: previous_contests/SYSUPC_2024_Online.md
     - 2023 中山大学程序设计竞赛网络赛: previous_contests/SYSUPC_2023_Online.md
     - 2022 中山大学程序设计校赛: previous_contests/SYSUPC_2022_Final.md
     - 2026 中山大学程序设计新手赛 : previous_contests/NVCPC_2026_Online.md
-    - 2026 中山大学程序设计新手赛热身赛: previous_contests/NVCPC_2026_Warm_Up.md
     - 2025 中山大学程序设计新手赛: previous_contests/NVCPC_2025_Online.md
-    - 2025 中山大学程序设计新手赛热身赛: previous_contests/NVCPC_2025_Warm_Up.md
     - 2024 中山大学程序设计新手赛: previous_contests/NVCPC_2024_Online.md
-    - 2024 中山大学程序设计新手赛热身赛: previous_contests/NVCPC_2024_Warm_Up.md
     - 题解: 
       - 2025 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUPC_2025_Final_tutorial.md
       - 2025 中山大学程序设计校赛网络赛题解: previous_contests/tutorial/SYSUPC_2025_Online_tutorial.md
@@ -148,6 +143,7 @@ nav:
 
 markdown_extensions:
   - pymdownx.highlight
+  - attr_list
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid

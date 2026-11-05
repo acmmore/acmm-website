@@ -1,10 +1,21 @@
+---
+hide:
+  - toc
+---
+
 # SYSUPC Final 2024
 
-<iframe
-  src="../../assets/college/SYSUPC_2024_Final.pdf"
-  width="100%"
-  height="800"
-  title="2024SYSUPCFINAL PDF">
-</iframe>
+<div style="display: flex; gap: 8px; align-items: flex-start;">
+  <iframe
+    src="../../assets/college/SYSUPC_2024_Final.pdf"
+    style="flex: 1; min-width: 0; height: 800px;"
+    title="2024SYSUPCFINAL PDF">
+  </iframe>
 
-- [查看题解](tutorial/SYSUPC_2024_Final_tutorial.md)
+  <a
+    href="../tutorial/SYSUPC_2024_Final_tutorial/"
+    class="md-button"
+    style="white-space: nowrap;">
+    查看题解
+  </a>
+</div>

@@ -1,10 +1,21 @@
+---
+hide:
+  - toc
+---
+
 # SVCPC 2025 Online
 
-<iframe
-  src="../../assets/novice/NVCPC_2025_Onsite.pdf"
-  width="100%"
-  height="800"
-  title="2025NVCPCONSITE PDF">
-</iframe>
+<div style="display: flex; gap: 8px; align-items: flex-start;">
+  <iframe
+    src="../../assets/novice/NVCPC_2025_Onsite.pdf"
+    style="flex: 1; min-width: 0; height: 800px;"
+    title="NVCPC2025PDF">
+  </iframe>
 
-- [查看题解](tutorial/NVCPC_2025_Onsite_tutorial.md)
+  <a
+    href="../tutorial/NVCPC_2025_Onsite_tutorial/"
+    class="md-button"
+    style="white-space: nowrap;">
+    查看题解
+  </a>
+</div>
