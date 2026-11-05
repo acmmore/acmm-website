@@ -1,6 +1,6 @@
 site_name: SYSU::ACMM
 site_description: 社团算法知识库与传承平台
-site_url: https://SemsueZhang.github.io/acmm-site  # 稍后部署时再改
+site_url: http://soj.acmm.club/mainpage/  # 网址
 copyright: Copyright 2026 ACMM 协会
 
 theme:
@@ -8,8 +8,8 @@ theme:
   language: zh
   logo: assets/logo.png
   # 仓库信息
-  repo_url: https://github.com/SemsueZhang/acmm-site
-  repo_name: SemsueZhang/acmm-site   # 可选，鼠标悬停时显示的文字
+  repo_url: https://github.com/acmmore/acmm-website
+  repo_name: acmmore/acmm-website   # 可选，鼠标悬停时显示的文字
 
   # 显示图标（推荐使用 Octocat 或 GitHub 图标）
   icon:
@@ -134,6 +134,15 @@ nav:
     - 2025 中山大学程序设计新手赛热身赛: previous_contests/NVCPC_2025_Warm_Up.md
     - 2024 中山大学程序设计新手赛: previous_contests/NVCPC_2024_Online.md
     - 2024 中山大学程序设计新手赛热身赛: previous_contests/NVCPC_2024_Warm_Up.md
+    - 题解: 
+      - 2025 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUPC_2025_Final_tutorial.md
+      - 2025 中山大学程序设计校赛网络赛题解: previous_contests/tutorial/SYSUPC_2025_Online_tutorial.md
+      - 2024 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUPC_2024_Final_tutorial.md
+      - 2024 中山大学程序设计校赛网络赛题解: previous_contests/tutorial/SYSUPC_2024_Online_tutorial.md
+      - 2023 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUPC_2023_Final_tutorial.md
+      - 2022 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUPC_2022_Final_tutorial.md
+      - 2026 中山大学程序设计新手赛题解: previous_contests/tutorial/NVCPC_2026_Onsite_tutorial.md
+      - 2025 中山大学程序设计新手赛题解: previous_contests/tutorial/NVCPC_2025_Onsite_tutorial.md
   - 支持:
     - support/index.md
 
