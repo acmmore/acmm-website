@@ -5,7 +5,7 @@ hide:
 
 # SVCPC 2026 Online
 
-<div style="display: flex; gap: 8px; align-items: flex-start;">
+<div class="contest-pdf-layout" style="display: flex; gap: 8px; align-items: flex-start;">
   <iframe
     src="../../assets/novice/NVCPC_2026_Onsite.pdf"
     style="flex: 1; min-width: 0; height: 800px;"

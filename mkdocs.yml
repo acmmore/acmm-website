@@ -38,9 +38,12 @@ theme:
     - search.highlight
     - content.code.copy
 
+exclude_docs: |
+  archive.md
+  problems/
+
 nav:
   - 主页: index.md
-  - 归档: archive.md
   - 关于:
     - about/index.md
     - 成员介绍: about/members.md
@@ -114,28 +117,24 @@ nav:
       - algorithms/geometry/index.md
       - 几何基础: algorithms/geometry/basics.md
       - 叉积与凸包: algorithms/geometry/convex-hull.md
-  - 题库:
-    - problems/index.md
-    - 周赛:
-      - 2025-12-7 周赛: problems/weekly/2025-12-7.md
   - 往期比赛:
     - previous_contests/index.md
-    - 2025 中山大学程序设计校赛: previous_contests/SYSUPC_2025_Final.md
-    - 2025 中山大学程序设计校赛网络赛: previous_contests/SYSUPC_2025_Online.md
-    - 2024 中山大学程序设计校赛: previous_contests/SYSUPC_2024_Final.md
-    - 2024 中山大学程序设计校赛网络赛: previous_contests/SYSUPC_2024_Online.md
-    - 2023 中山大学程序设计竞赛网络赛: previous_contests/SYSUPC_2023_Online.md
-    - 2022 中山大学程序设计校赛: previous_contests/SYSUPC_2022_Final.md
+    - 2025 中山大学程序设计校赛: previous_contests/SYSUCPC_2025_Final.md
+    - 2025 中山大学程序设计校赛网络赛: previous_contests/SYSUCPC_2025_Online.md
+    - 2024 中山大学程序设计校赛: previous_contests/SYSUCPC_2024_Final.md
+    - 2024 中山大学程序设计校赛网络赛: previous_contests/SYSUCPC_2024_Online.md
+    - 2023 中山大学程序设计竞赛网络赛: previous_contests/SYSUCPC_2023_Online.md
+    - 2022 中山大学程序设计校赛: previous_contests/SYSUCPC_2022_Final.md
     - 2026 中山大学程序设计新手赛 : previous_contests/NVCPC_2026_Online.md
     - 2025 中山大学程序设计新手赛: previous_contests/NVCPC_2025_Online.md
     - 2024 中山大学程序设计新手赛: previous_contests/NVCPC_2024_Online.md
     - 题解: 
-      - 2025 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUPC_2025_Final_tutorial.md
-      - 2025 中山大学程序设计校赛网络赛题解: previous_contests/tutorial/SYSUPC_2025_Online_tutorial.md
-      - 2024 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUPC_2024_Final_tutorial.md
-      - 2024 中山大学程序设计校赛网络赛题解: previous_contests/tutorial/SYSUPC_2024_Online_tutorial.md
-      - 2023 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUPC_2023_Final_tutorial.md
-      - 2022 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUPC_2022_Final_tutorial.md
+      - 2025 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUCPC_2025_Final_tutorial.md
+      - 2025 中山大学程序设计校赛网络赛题解: previous_contests/tutorial/SYSUCPC_2025_Online_tutorial.md
+      - 2024 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUCPC_2024_Final_tutorial.md
+      - 2024 中山大学程序设计校赛网络赛题解: previous_contests/tutorial/SYSUCPC_2024_Online_tutorial.md
+      - 2023 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUCPC_2023_Final_tutorial.md
+      - 2022 中山大学程序设计校赛题解: previous_contests/tutorial/SYSUCPC_2022_Final_tutorial.md
       - 2026 中山大学程序设计新手赛题解: previous_contests/tutorial/NVCPC_2026_Onsite_tutorial.md
       - 2025 中山大学程序设计新手赛题解: previous_contests/tutorial/NVCPC_2025_Onsite_tutorial.md
   - 支持:
@@ -155,6 +154,7 @@ markdown_extensions:
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/mobile-pdf.js
 
 extra_css:
   - stylesheets/sidebar.css

@@ -1,7 +1,7 @@
 # SYSUPC 2024 Final tutorial
 
 <iframe
-  src="../../../assets/college/tutorial/SYSUPC_2024_Final_tutorial.pdf"
+  src="../../../assets/college/tutorial/SYSUCPC_2024_Final_tutorial.pdf"
   width="100%"
   height="800"
   title="SYSUPC 2024 Final tutorial PDF">
