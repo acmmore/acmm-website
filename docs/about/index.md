@@ -58,7 +58,7 @@
             font-size: 1.1rem;">
     📧 会长邮箱
   </a>
-  <a href="https://qm.qq.com/q/cjbXX90qas" target="_blank"
+  <a href="https://qm.qq.com/q/1DFQx1TGE4" target="_blank"
      style="display: inline-block;
             padding: 0.7rem 1.5rem;
             margin: 0.5rem;
